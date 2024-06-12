@@ -1,4 +1,4 @@
-# Documentation-Classification-HAN
+# Document classification with HAN, TextGCN and BERT
 Document classification re-implementing project in PyTorch. 
 
 Kaggle notebook version can be found at: 
