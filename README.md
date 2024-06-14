@@ -1,11 +1,11 @@
 # Document classification with HAN, TextGCN and BERT
 Document classification with **HAN, TextGCN, BERT** re-implementing project in PyTorch. 
 
-# HAN - Hierarchical attention networks
+## HAN - Hierarchical attention networks
 Our PyTorch implementation for **Hierarchical Attention Networks for Document Classification (NAACL 2016)** can be found at ``han-exps.ipynb``.
 
 <p align="center" width="100%">
-    <img scale="60%" src="https://github.com/vhminh2210/Document-Classification/blob/main/figs/HAN.png"> 
+    <img scale="45%" src="https://github.com/vhminh2210/Document-Classification/blob/main/figs/HAN.png"> 
 </p>
 
 Parameters to be modified:
