@@ -1,6 +1,14 @@
 # Document classification with HAN, TextGCN and BERT
 Document classification with **HAN, TextGCN, BERT** re-implementing project in PyTorch. 
 
+## Datasets
+Our dataset processing pipeline expects data corpus being stored in `.csv` format with two fields: `text` and `labels`.
+
+Three datasets are used for our experiments:
+- YELP-100k: First 100k samples of YELP Review dataset: https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset
+- MR: 
+- R52: https://www.kaggle.com/datasets/weipengfei/ohr8r52
+
 ## HAN - Hierarchical attention networks
 Our PyTorch implementation for **Hierarchical Attention Networks for Document Classification (NAACL 2016)** can be found at ``han-exps.ipynb``.
 
