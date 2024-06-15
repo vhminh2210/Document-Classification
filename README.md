@@ -40,3 +40,7 @@ Our Negative sampling re-implementation can be found at `negsampling-exps.ipynb`
  
 Kaggle notebook version can be found at: 
 - **HAN**: https://www.kaggle.com/code/vhminh2210/han-exps
+
+## TextGCN - Graph Convolutional Networks for Text Classification
+Our PyTorch implementation for **Graph Convolutional Networks for Text Classification (AAAI 2019)** can be found at ``textgcn-exps.ipynb`` which supports basic text graph construction over `MR` and `R52` datasets.
+
