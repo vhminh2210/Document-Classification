@@ -5,8 +5,8 @@ Document classification with **HAN, TextGCN, BERT** re-implementing project in P
 Our dataset processing pipeline expects data corpus being stored in `.csv` format with two fields: `text` and `labels`.
 
 Three datasets are used for our experiments:
-- YELP-100k: First 100k samples of YELP Review dataset: https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset
-- MR: 
+- YELP-100k: First 100k samples of YELP Review: https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset
+- MR: https://huggingface.co/datasets/mattymchen/mr
 - R52: https://www.kaggle.com/datasets/weipengfei/ohr8r52
 
 ## HAN - Hierarchical attention networks
