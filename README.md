@@ -4,7 +4,7 @@ Document classification with **HAN, TextGCN, BERT** re-implementing project in P
 ## HAN - Hierarchical attention networks
 Our PyTorch implementation for **Hierarchical Attention Networks for Document Classification (NAACL 2016)** can be found at ``han-exps.ipynb``.
 
-<p align="center" width="100%">
+<p align="center" height="50%">
     <img scale="45%" height="50%" src="https://github.com/vhminh2210/Document-Classification/blob/main/figs/HAN.png"> 
 </p>
 
@@ -44,3 +44,26 @@ Kaggle notebook version can be found at:
 ## TextGCN - Graph Convolutional Networks for Text Classification
 Our PyTorch implementation for **Graph Convolutional Networks for Text Classification (AAAI 2019)** can be found at ``textgcn-exps.ipynb`` which supports basic text graph construction over `MR` and `R52` datasets.
 
+For more complicated tasks and datasets, we ultilized the more stable implementation provided by **Understanding Graph Convolutional Networks for Text Classification (AAAI 2022 on DLG)**. A modified copy of their experiments can be found at `textgcn-ptest.ipynb`. We use this notebook for TextGCN-related experiments.
+
+The original source code can be found at: https://github.com/usydnlp/TextGCN_analysis/blob/main/final.ipynb
+
+<p align="center" width="50%">
+    <img scale="45%" width="70%" src="https://github.com/vhminh2210/Document-Classification/blob/main/figs/TextGCN.png"> 
+</p>
+
+Parameters to be modified for `textgcn-ptest.ipynb`:
+```python
+EDGE = 2 # 0:d2w 1:d2w+w2w 2:d2w+w2w+d2d
+NODE = 0 # 0:one-hot #1:BERT 
+NUM_LAYERS = 2 
+
+HIDDEN_DIM = 200
+DROP_OUT = 0.5
+LR = 0.02
+WEIGHT_DECAY = 0
+EARLY_STOPPING = 10
+NUM_EPOCHS = 200
+```
+
+For `textgcn-exps.ipynb`, `EDGE = 1, NODE = 0, NUM_LAYERS = 2, EARLY_STOPPING = 10` are fixed parameters. Other parameters can be modified.
