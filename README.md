@@ -67,3 +67,26 @@ NUM_EPOCHS = 200
 ```
 
 For `textgcn-exps.ipynb`, `EDGE = 1, NODE = 0, NUM_LAYERS = 2, EARLY_STOPPING = 10` are fixed parameters. Other parameters can be modified.
+
+## BERT - Bidirectional Encoder Representations from Transformers
+We investigate the capabilities of BERT for document classification following the configuration introduced by **DocBERT: BERT for Document Classification**.
+
+Due to technical constraints, we used pretrained `PYTORCH-TRANSFORMERS` (https://pytorch.org/hub/huggingface_pytorch-transformers/) models with small modifications on training hyperparameters. Our experiments is performed using `bert-base-uncased` model. The source code for BERT experiments is provided at: `bert-exps.ipynb`.
+
+<p align="center" width="50%">
+    <img scale="45%" width="70%" src="https://github.com/vhminh2210/Document-Classification/blob/main/figs/BERT.png"> 
+</p>
+
+Parameters to be modified:
+```python
+DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+BATCH_SIZE = 8
+NUM_CLASSES = 2
+MSL = 256
+
+# Tokenizer
+tokenizer = torch.hub.load('huggingface/pytorch-transformers', 'tokenizer', 'bert-base-uncased')
+# Pretrained model
+model = torch.hub.load('huggingface/pytorch-transformers', 'modelForSequenceClassification', 'bert-base-uncased', num_labels= NUM_CLASSES)
+model.to(DEVICE)
+```
