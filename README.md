@@ -100,3 +100,18 @@ tokenizer = torch.hub.load('huggingface/pytorch-transformers', 'tokenizer', 'ber
 model = torch.hub.load('huggingface/pytorch-transformers', 'modelForSequenceClassification', 'bert-base-uncased', num_labels= NUM_CLASSES)
 model.to(DEVICE)
 ```
+
+## References
+[1]. Adhikari, Ashutosh, et al. **"Docbert: Bert for document classification."** arXiv preprint arXiv:1904.08398 (2019).
+
+[2]. Devlin, Jacob, et al. **"Bert: Pre-training of deep bidirectional transformers for language understanding."** arXiv preprint arXiv:1810.04805 (2018).
+
+[3]. Han, Soyeon Caren, et al. **"Understanding graph convolutional networks for text classification."** arXiv preprint arXiv:2203.16060 (2022).
+
+[4]. Mikolov, Tomas, et al. **"Distributed representations of words and phrases and their compositionality."** Advances in neural information processing systems 26 (2013).
+
+[5]. Pennington, Jeffrey, Richard Socher, and Christopher D. Manning. **"Glove: Global vectors for word representation."** Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP). 2014.
+
+[6]. Yang, Zichao, et al. **"Hierarchical attention networks for document classification."** Proceedings of the 2016 conference of the North American chapter of the association for computational linguistics: human language technologies. 2016.
+
+[7]. Yao, Liang, Chengsheng Mao, and Yuan Luo. **"Graph convolutional networks for text classification."** Proceedings of the AAAI conference on artificial intelligence. Vol. 33. No. 01. 2019.
